@@ -1,0 +1,348 @@
+html, body,a {
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 0px;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    background-color: rgb(182, 210, 219);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2px;
+    justify-content: space-around;
+  
+}
+
+.perfilclass{ 
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  height: inherit;
+  overflow: auto;
+  color: black;
+}
+
+.quemsomosclass{ 
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  height: inherit;
+  overflow: auto;
+  font-size: 20px;
+  image-rendering: optimizeQuality;
+  size-adjust: 50;
+}
+
+.noticiasclass{ 
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    height: inherit;
+    overflow: auto;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.ntcclass img {
+    display: block;
+}
+/*.btncrudclassnao{
+    visibility: hidden;
+}*/
+.modal_adicionar
+.acoes{
+    display: none;
+    position: absolute;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 150px;
+    transform: translateX(60%);
+}
+/*.btncrudclass:hover{
+    visibility:hidden;
+}*/
+.acoes img{
+    margin: 5px;
+  
+}
+.acoes button{
+    border-radius: 100px ;
+    border: none;
+}
+
+.lixeiraclass{
+    background-color: rgb(220, 20, 60);
+    opacity: 0.5;
+}
+.editarclass{
+    background-color: rgb(169, 255, 84);
+    opacity: 0.5;
+}
+.lerclass{
+    background-color: blue;
+    opacity: 0.5;
+}
+.acoes button:hover{
+    opacity: 1;
+}
+.formperfil label{
+display: inline-block;
+}
+.formperfil a{
+    visibility: hidden;
+    color: rgb(143, 42, 42);
+}
+.formperfil-erro a {
+    visibility: visible;
+    color: red;
+}
+.adicionarclass{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin :30px;
+}
+.addbtnclass{
+    border-radius: 100%;
+    border:100px yellow;
+    font-size:60px;
+    padding: 10px 25px;
+    background-color: yellow;
+    left: 50%;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.addbtnclass:hover {
+    opacity: 1;
+}
+@media (max-width: 700px) {
+
+  
+    .acoes {
+      width: auto!important;
+    }
+    
+    td button i {
+      font-size: 20px!important;
+    }
+  
+    td button i:first-child {
+      margin-right: 0;
+    }
+  
+    .modal_info {
+      width: 90%!important;
+    }
+  
+    .modal_info label {
+      font-size: 12px!important;
+    }
+  }
+    .modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(91, 62, 62);
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    max-width: 600px;
+}
+.modal_info label {
+  font-size: 14px;
+  width: 100%;
+}
+.modal_info input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px; 
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  align-items: center;
+    justify-content: center;
+}
+
+.modal_info button {
+  width: 80%;
+  margin: 10px auto;
+  outline: none;
+  border-radius: 20px; 
+  padding: 5px 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(106, 106, 241);
+  color: white;
+}
+.modal_info button:hover{
+  background-color: blue;
+
+}
+
+
+.close_modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.active {
+    display: flex; 
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.active .modal_info {
+    animation: modal 0.3s ease-out;
+}
+
+.noticiasclass button{
+    text-decoration: none;
+    border: none;
+}
+
+
+
+.modal_reportagem {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+
+  
+    .reportagem_info {
+      width: 90%!important;
+      max-width: none;
+    }
+  }
+
+.reportagem_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+  }
+  
+
+  .reportagem_info button {
+    width: 80%;
+    margin: 10px ;
+    outline: none;
+    border-radius: 20px; 
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(106, 106, 241);
+    color: white;
+  }
+  .reportagem_info button:hover{
+    background-color: blue;
+
+  }
+  .close_Reportagem {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+  .active {
+    display: flex;
+  }
+  @keyframes modal {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  .active .reportagem_info {
+    animation: modal 0.3s ease-out;
+}
+
+.modal_editar {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.modal_info {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.close_modal {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
